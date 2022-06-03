@@ -71,43 +71,44 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
   // border: 1px solid rgb(0, 255, 13);
 }
 
-@media only screen and (max-width: 600px) {
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 50px;
-    line-height: 50px;
-    // border: 1px solid white;
+// @media only screen and (max-width: 600px) {
+//   .nav {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     height: 50px;
+//     line-height: 50px;
+//     // border: 1px solid white;
 
-    .logo {
-      padding: 0 0 0 20px;
-      //   flex-grow: 2;
-      //   background-image: url(../assets/播放.png);
-    }
-    .meus {
-      ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        li {
-          padding: 0 10px;
-          a {
-            // 取消链接的下划线
-            text-decoration: none;
-            // 设置为块级是为了鼠标移到li标签时能触发a标签
-            display: block;
-            height: 100%;
-            width: 100%;
-            // 文字居中
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
+//     .logo {
+//       padding: 0 0 0 20px;
+//       //   flex-grow: 2;
+//       //   background-image: url(../assets/播放.png);
+//     }
+//     .meus {
+//       ul {
+//         list-style-type: none;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         li {
+//           padding: 0 10px;
+//           a {
+//             // 取消链接的下划线
+//             text-decoration: none;
+//             // 设置为块级是为了鼠标移到li标签时能触发a标签
+//             display: block;
+//             height: 100%;
+//             width: 100%;
+//             padding: 0 10px;
+//             // 文字居中
+//             text-align: center;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 @media only screen and (min-width: 600px) {
   .nav {
     display: flex;
@@ -144,20 +145,20 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
     }
   }
 }
-.nav {
-  backdrop-filter: blur(10px);
-}
-.nav::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  filter: blur(20px);
-  z-index: -1;
-  // margin: -30px;
-}
+// .nav {
+//   backdrop-filter: blur(10px);
+// }
+// .nav::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   filter: blur(20px);
+//   z-index: -1;
+//   margin: -30px;
+// }
 .demo-cube {
   margin: auto;
   perspective: 200px;
@@ -247,7 +248,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
   left: 0;
   right: 0;
   filter: blur(30px);
-  z-index: -2;
+  z-index: -1;
   margin: -30px;
 }
 .myInfo:hover {
@@ -313,7 +314,7 @@ button:hover {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;

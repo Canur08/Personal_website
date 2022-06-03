@@ -313,7 +313,7 @@ button:hover {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;

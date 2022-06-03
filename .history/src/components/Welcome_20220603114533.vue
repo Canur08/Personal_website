@@ -100,6 +100,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
             display: block;
             height: 100%;
             width: 100%;
+            padding: 0 10px;
             // 文字居中
             text-align: center;
           }
@@ -150,13 +151,13 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
 .nav::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 20px;
   bottom: 0;
   left: 0;
   right: 0;
   filter: blur(20px);
   z-index: -1;
-  // margin: -30px;
+  margin: -30px;
 }
 .demo-cube {
   margin: auto;
@@ -247,7 +248,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
   left: 0;
   right: 0;
   filter: blur(30px);
-  z-index: -2;
+  z-index: -1;
   margin: -30px;
 }
 .myInfo:hover {
@@ -313,7 +314,7 @@ button:hover {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;

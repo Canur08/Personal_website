@@ -100,6 +100,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
             display: block;
             height: 100%;
             width: 100%;
+            // padding: 0 10px;
             // 文字居中
             text-align: center;
           }
@@ -313,7 +314,7 @@ button:hover {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;
