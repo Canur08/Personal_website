@@ -1,0 +1,21 @@
+<script setup lang="ts">
+const navList: Array<string> = ['a', 'b', 'd', 'e' , 'f']
+</script>
+
+<template>
+<nav>
+  <ul>
+    <li v-for="item in navList" :key="item">
+    {{ item }}
+    <a>hhll</a>
+    </li>
+  </ul>
+</nav>  
+</template>
+
+<style lang="scss" scoped>
+li {
+  display: inline;
+  background-color: greenyellow;
+}
+</style>
