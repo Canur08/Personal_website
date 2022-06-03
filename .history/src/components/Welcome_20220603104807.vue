@@ -78,7 +78,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
     justify-content: space-between;
     height: 50px;
     line-height: 50px;
-    // border: 1px solid white;
+    backdrop-filter: blur(10px);
 
     .logo {
       padding: 0 0 0 20px;
@@ -107,6 +107,15 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
         }
       }
     }
+  }
+  .nav::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    filter: blur(20px);
+    z-index: -1;
+    margin: -30px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -144,20 +153,6 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
       }
     }
   }
-}
-.nav {
-  backdrop-filter: blur(10px);
-}
-.nav::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  filter: blur(20px);
-  z-index: -1;
-  margin: -30px;
 }
 .demo-cube {
   margin: auto;
@@ -247,7 +242,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
   bottom: 0;
   left: 0;
   right: 0;
-  filter: blur(30px);
+  filter: blur(20px);
   z-index: -1;
   margin: -30px;
 }

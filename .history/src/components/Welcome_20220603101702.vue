@@ -9,7 +9,7 @@
 import { ref } from "vue";
 
 // const a: number = 1
-let infoText = ref("欢迎你访问我的个人网站，点击Link Start进入吧");
+let infoText = ref('欢迎你访问我的个人网站，点击Link Start进入吧')
 let played = ref(true);
 function openVoice() {
   var videoPlayer = <HTMLAudioElement>document.getElementById("bgVideo");
@@ -42,8 +42,10 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
         <div class="btn">
           <button>LinkStart</button>
         </div>
-        <div class="myInfo">
-          <p>{{ infoText }}</p>
+        <div>
+          <div class="myInfo">
+            <p>{{ infoText }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -66,99 +68,6 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
 </template>
 
 <style lang="scss" scoped>
-* {
-  color: white;
-  // border: 1px solid rgb(0, 255, 13);
-}
-
-@media only screen and (max-width: 600px) {
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 50px;
-    line-height: 50px;
-    // border: 1px solid white;
-
-    .logo {
-      padding: 0 0 0 20px;
-      //   flex-grow: 2;
-      //   background-image: url(../assets/播放.png);
-    }
-    .meus {
-      ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        li {
-          padding: 0 10px;
-          a {
-            // 取消链接的下划线
-            text-decoration: none;
-            // 设置为块级是为了鼠标移到li标签时能触发a标签
-            display: block;
-            height: 100%;
-            width: 100%;
-            padding: 0 10px;
-            // 文字居中
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (min-width: 600px) {
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 80px;
-    line-height: 80px;
-    .logo {
-      padding: 0 0 0 50px;
-      //   flex-grow: 2;
-      //   background-image: url(../assets/播放.png);
-    }
-    .meus {
-      ul {
-        color: white;
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        li {
-          padding: 0 20px;
-          a {
-            // 取消链接的下划线
-            text-decoration: none;
-            // 设置为块级是为了鼠标移到li标签时能触发a标签
-            display: block;
-            height: 100%;
-            width: 100px;
-            // 文字居中
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
-.nav {
-  backdrop-filter: blur(10px);
-}
-.nav::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  filter: blur(20px);
-  z-index: -1;
-  margin: -30px;
-}
 .demo-cube {
   margin: auto;
   perspective: 200px;
@@ -179,7 +88,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
     transform-style: preserve-3d;
     transform-origin: 50px 50px;
     transform: rotateX(-33.5deg) rotateY(45deg);
-    animation: slowspin 3s linear 0s infinite normal;
+    animation: slowspin 3s linear 0s infinite normal ;
 
     li {
       position: absolute;
@@ -230,26 +139,16 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
   // border: 1px solid white;
 }
 .myInfo {
-  // background-color: rgba($color: #8f8f8f, $alpha: 0.6);
+  background-color: rgba($color: #8f8f8f, $alpha: 0.6);
   backdrop-filter: blur(10px);
   border: 1px solid white;
   border-radius: 20px;
   margin-top: 30px;
   height: 100px;
   p {
-    padding: 30px 10% 0 10%;
+    margin-top: 30px;
+    padding: 0 20%;
   }
-}
-.myInfo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  filter: blur(30px);
-  z-index: -1;
-  margin: -30px;
 }
 .myInfo:hover {
   // transform: rotate(60deg);
@@ -267,6 +166,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
     100% {
       // background-color: rgba($color: #8f8f8f, $alpha: 0.9);
       transform: rotate(0deg);
+      
     }
   }
 }
@@ -326,6 +226,29 @@ button:hover {
   mix-blend-mode: white;
 }
 
+.logo {
+  padding: 0 0 0 50px;
+  //   flex-grow: 2;
+  //   background-image: url(../assets/播放.png);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  line-height: 80px;
+}
+
+a {
+  // 取消链接的下划线
+  text-decoration: none;
+  // 设置为块级是为了鼠标移到li标签时能触发a标签
+  display: block;
+  height: 100%;
+  width: 100px;
+  // 文字居中
+  text-align: center;
+}
 /* 动画代码 */
 @keyframes example {
   0% {
@@ -350,7 +273,18 @@ a:hover {
   // animation-duration: 1s;
   animation: example 1s forwards;
 }
-
+.meus {
+  ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    li {
+      padding: 0 20px;
+    }
+  }
+}
 main {
   position: absolute;
   top: 0;
@@ -369,5 +303,9 @@ video {
   // 设置视频全屏占比，且比例不变
   object-fit: cover;
   background-color: burlywood;
+}
+* {
+  color: white;
+  // border: 1px solid rgb(0, 255, 13);
 }
 </style>

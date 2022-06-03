@@ -247,7 +247,7 @@ const arr: Array<string> = ["首页", "Bilibili", "Github"];
   bottom: 0;
   left: 0;
   right: 0;
-  filter: blur(30px);
+  filter: blur(20px);
   z-index: -1;
   margin: -30px;
 }
