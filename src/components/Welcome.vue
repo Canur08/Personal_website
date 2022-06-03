@@ -11,7 +11,7 @@ import { useRouter} from 'vue-router'
 const router = useRouter();
 
 // const a: number = 1
-let infoText = ref("欢迎你访问我的个人网站，点击Link Start进入吧");
+let infoText = ref("欢迎访问我的个人网站，点击Link Start进入吧");
 let played = ref(true);
 function openVoice() {
   var videoPlayer = <HTMLAudioElement>document.getElementById("bgVideo");
@@ -32,8 +32,14 @@ function inHead() {
       <div class="logo">logo</div>
       <div class="meus">
         <ul>
-          <li v-for="item in arr" :key="item">
-            <a href="">{{ item }}</a>
+          <li>
+            <a href="">QQ</a>
+          </li>
+          <li>
+            <a href="">Bilibili</a>
+          </li>
+          <li>
+            <a href="">GitHub</a>
           </li>
         </ul>
       </div>
