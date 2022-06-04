@@ -6,7 +6,6 @@ import Head from "./Head.vue";
   <main>
     <Head />
     <router-view></router-view>
-    
   </main>
 </template>
 
@@ -16,8 +15,8 @@ main {
   background-color: #ececea;
   height: 100vh;
 }
-// .router-view {
-//   display: flex;
-//   justify-content: center;
-// }
+.router-view {
+  display: flex;
+  justify-content: center;
+}
 </style>

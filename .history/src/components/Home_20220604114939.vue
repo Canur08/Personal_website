@@ -6,7 +6,6 @@ import Head from "./Head.vue";
   <main>
     <Head />
     <router-view></router-view>
-    
   </main>
 </template>
 

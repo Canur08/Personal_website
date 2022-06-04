@@ -5,7 +5,7 @@ import Head from "./Head.vue";
 <template>
   <main>
     <Head />
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
     
   </main>
 </template>

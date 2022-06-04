@@ -44,7 +44,7 @@ const router = useRouter();
 </template>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   nav {
     padding: 20px 20px 0 20px;
     display: flex;
@@ -98,14 +98,14 @@ const router = useRouter();
     }
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 700px) {
   nav {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
     ul {
-      max-width: 600px;
+      // height: 60px;
       text-align: center;
       list-style: none;
       display: flex;

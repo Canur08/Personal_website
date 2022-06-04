@@ -44,7 +44,7 @@ const router = useRouter();
 </template>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   nav {
     padding: 20px 20px 0 20px;
     display: flex;
@@ -68,11 +68,7 @@ const router = useRouter();
         // width: 100px;
         // padding: 5px 10px;
         line-height: 50px;
-        a {
-          display: block;
-          text-decoration: none;
-          color: rgb(0, 0, 0);
-        }
+
         // background-color: greenyellow;
         // border: 1px solid blueviolet;
         // box-shadow: -5px -5px 7px 0px rgba($color: #ffffff, $alpha: 0.3),
@@ -98,14 +94,14 @@ const router = useRouter();
     }
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 700px) {
   nav {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
     ul {
-      max-width: 600px;
+      // height: 60px;
       text-align: center;
       list-style: none;
       display: flex;

@@ -7,7 +7,7 @@
       <div class="left">
         <div class="myInfo">
           <div class="portrait imgHW">
-            <!-- <img class="portraitImg" src="/img/头像.png" alt="" /> -->
+            <img class="portraitImg" src="/img/头像.png" alt="" />
           </div>
           <div class="infoBox">
             <div class="infoName">右上</div>
@@ -32,27 +32,22 @@ main {
   width: 100%;
 }
 * {
-  // border: 1px solid green;
-}
-@media only screen and (min-width: 700px) and (min-width: 700) {
-  
+  border: 1px solid green;
 }
 @media only screen and (min-width: 700px) {
   .card {
     text-align: center;
     // padding: 0 50px;
     width: 50%;
-    // min-width: 900px;
+    min-width: 700px;
     // border: 1px solid greenyellow;
   }
   .left {
-    // margin: 0 0 0 30%;
-    width: 100%;
-    background-color: rgb(136, 255, 175);
+    width: 800px;
+    background-color: aqua;
   }
   .right {
-    // width: 500px;
-    // margin: 0 30% 0 0;
+    width: 800px;
     background-color: aqua;
   }
 }

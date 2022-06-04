@@ -105,7 +105,7 @@ const router = useRouter();
     display: flex;
     justify-content: center;
     ul {
-      max-width: 600px;
+      // height: 60px;
       text-align: center;
       list-style: none;
       display: flex;

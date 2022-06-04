@@ -42,7 +42,7 @@ main {
     text-align: center;
     // padding: 0 50px;
     width: 50%;
-    // min-width: 900px;
+    min-width: 900px;
     // border: 1px solid greenyellow;
   }
   .left {

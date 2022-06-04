@@ -4,9 +4,8 @@ import Head from "./Head.vue";
 
 <template>
   <main>
-    <Head />
+    <Head style="color:aqua;"/>
     <router-view></router-view>
-    
   </main>
 </template>
 
@@ -16,8 +15,4 @@ main {
   background-color: #ececea;
   height: 100vh;
 }
-// .router-view {
-//   display: flex;
-//   justify-content: center;
-// }
 </style>

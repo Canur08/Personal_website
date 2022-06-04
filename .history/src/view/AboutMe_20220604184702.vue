@@ -34,15 +34,12 @@ main {
 * {
   // border: 1px solid green;
 }
-@media only screen and (min-width: 700px) and (min-width: 700) {
-  
-}
 @media only screen and (min-width: 700px) {
   .card {
     text-align: center;
     // padding: 0 50px;
     width: 50%;
-    // min-width: 900px;
+    min-width: 700px;
     // border: 1px solid greenyellow;
   }
   .left {
